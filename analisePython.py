@@ -10,12 +10,19 @@
 
 #Qual a profissão? Qual a idade? Qual a faixa de renda? E todas as informações que você puder analisar para dizer qual o cliente ideal da empresa.
 
-#Base de Dados: https://drive.google.com/drive/folders/1XvNLDKVH7TUS8HdH4r0TkXL__MFpoc3e?usp=share_link
+# Base de Dados: https://drive.google.com/drive/folders/1XvNLDKVH7TUS8HdH4r0TkXL__MFpoc3e?usp=share_link
 
+
+
+#####
 
 import pandas as pd 
 
 baseDeDados = pd.read_csv("clientes.csv", encoding="latin", sep=";")
 
-print(baseDeDados)
+# Retirando Colunas sem importancia
+
+baseDeDados=baseDeDados.drop("Unnamed: 8", axis = 1)
+
+
 
