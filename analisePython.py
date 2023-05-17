@@ -15,4 +15,7 @@
 
 import pandas as pd 
 
+baseDeDados = pd.read_csv("clientes.csv", encoding="latin", sep=";")
+
+print(baseDeDados)
 
