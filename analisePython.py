@@ -33,3 +33,8 @@ baseDeDados["Salário Anual (R$)"] = pd.to_numeric(baseDeDados["Salário Anual (
 # print(baseDeDados.info()) - Conferindo 
 
 
+# Retirando linhas vazias 
+
+baseDeDados = baseDeDados.dropna()
+
+# print(baseDeDados.info()) - Conferindo 
