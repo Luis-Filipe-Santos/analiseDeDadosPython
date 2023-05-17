@@ -22,7 +22,14 @@ baseDeDados = pd.read_csv("clientes.csv", encoding="latin", sep=";")
 
 # Retirando Colunas sem importancia
 
-baseDeDados=baseDeDados.drop("Unnamed: 8", axis = 1)
+baseDeDados = baseDeDados.drop("Unnamed: 8", axis = 1)
 
+# Tratamento de Dados
+
+# print(baseDeDados.info()) - Conferindo 
+
+baseDeDados["Salário Anual (R$)"] = pd.to_numeric(baseDeDados["Salário Anual (R$)"], errors="coerce")
+
+# print(baseDeDados.info()) - Conferindo 
 
 
