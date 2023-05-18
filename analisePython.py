@@ -38,3 +38,12 @@ baseDeDados["Salário Anual (R$)"] = pd.to_numeric(baseDeDados["Salário Anual (
 baseDeDados = baseDeDados.dropna()
 
 # print(baseDeDados.info()) - Conferindo 
+
+import plotly.express as px
+
+# Fazendo análise Completa
+
+for coluna in baseDeDados.columns:
+    grafico = px.histogram(baseDeDados, x=coluna, y="Nota (1-100)", histfunc="avg", text_auto=True, nbins=10)
+
+    grafico.show()
