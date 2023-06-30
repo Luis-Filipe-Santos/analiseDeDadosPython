@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Projeto de Identificação do Cliente Ideal
 
 Este projeto faz parte da DevWeek da DIO em parceria com o iFood.
@@ -41,3 +42,10 @@ Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou env
 
 ## Licença
 Este projeto está licenciado sob a MIT License.
+=======
+# Analise De Dados em Python
+
+ Análise de Dados feita totalmente com Python.
+ Usando técnicas de análise de dados em Python, genrando um relátorio que indica os passos a serem tomados pela empresa.
+ 
+>>>>>>> 0e058622befdf3c9093f5d828ee5a62b34d12516
